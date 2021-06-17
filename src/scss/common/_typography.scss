@@ -1,0 +1,16 @@
+h1{
+  font-family: 'Helvetica';
+  font-weight: 200;
+  font-size: 26px;
+  line-height: 31px;
+}
+a.active{
+  span{
+    font-weight: 600;
+  }
+   svg{
+     path{
+       fill: $green;
+     }
+   }
+}

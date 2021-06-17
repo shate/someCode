@@ -1,0 +1,19 @@
+.datepicker {
+  &.android-dark {
+    .datepicker-caption-item , .datepicker-navbar-btn{
+      color: $light-brown !important;
+    }
+    .datepicker-header{
+      color: $blue !important;
+      border-bottom-color: $violet !important;
+    }
+    .datepicker-scroll li{
+      color: $light-brown !important;
+    }
+    .datepicker-wheel{
+      border-top-color: $violet !important;
+      border-bottom-color: $violet !important;
+    }
+  }
+
+}

@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Montserrat-Thin';
+  src: url('../assets/fonts/Montserrat-Thin.eot');
+  src: url("../assets/fonts/Montserrat-Thin.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/Montserrat-Thin.woff") format("woff"),
+  url("../assets/fonts/Montserrat-Thin.ttf") format("truetype");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/fonts/HelveticaNeueCyr-Thin.eot');
+  src: url("../assets/fonts/HelveticaNeueCyr-Thin.eot?#iefix") format("embedded-opentype"),
+  url("../assets/fonts/HelveticaNeueCyr-Thin.woff2") format("woff2"),
+  url("../assets/fonts/HelveticaNeueCyr-Thin.woff") format("woff"),
+  url("../assets/fonts/HelveticaNeueCyr-Thin.ttf") format("truetype");
+
+  font-display: swap;
+}
+
+
+@import "../../node_modules/normalize.css";
+@import "../../node_modules/react-toastify/dist/ReactToastify.css";
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
+
+
+@import 'utils/module';
+@import 'common/module';
+@import 'components/module';
+
+

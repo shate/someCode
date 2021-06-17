@@ -1,0 +1,32 @@
+@import "../../../scss/utils/colors";
+
+.ico{
+  svg{
+    font-size: 1.8rem !important;
+  }
+  &:hover{
+    path{
+      fill: $green;
+    }
+  }
+}
+.link{
+  font-family: 'Montserrat-Thin';
+  color: $light-brown;
+  font-size: 20px;
+  text-decoration: none;
+  &:hover{
+    color: $green;
+  }
+  &.active{
+    color: $green;
+    font-weight: 600;
+    svg{
+      path{
+        fill: $green;
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,29 @@
+@import "../../../../../scss/utils/colors";
+
+.step{
+  font-family: 'Montserrat-Thin';
+  font-size: 12px;
+  width: 30px;
+  height: 30px;
+  border: 3px solid;
+  border-color:  rgba(79, 63, 132, 0.3);
+  background-color: rgba(79, 63, 132, 0.3);
+  &.completed{
+    background-color: rgba(87, 181, 53, 0.6);
+    border-color:  rgba(87, 181, 53, 0.3);;
+  }
+  &.current{
+    background-color: #4F3F84;
+    border-color: rgba(79, 63, 132, 0.3);;
+  }
+  &.disabled{
+    background-color: #3A3A3A;
+    border-color: #3A3A3A;
+  }
+}
+.middle{
+  border-left: 2px solid $light-brown;
+  height: 30px;
+  width: 1px;
+}
+

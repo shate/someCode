@@ -1,0 +1,43 @@
+.cup{
+  cursor: pointer;
+}
+form{
+  width: 100%;
+}
+input[type=text]{
+  width: 100%;
+}
+.overlay{
+  background: rgba(34, 34, 34, 0.7);
+  backdrop-filter: blur(7px);
+  border-radius: 20px;
+  padding: 22px 11px;
+}
+.overlay2{
+  background: rgba(34, 34, 34, 0.5);
+  backdrop-filter: blur(30px);
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 10px !important;
+  border-bottom: 1px solid $light-brown;
+  @include breakpoint(sm){
+    border: none !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    padding-bottom: 32px !important;
+  }
+}
+.MuiStep-completed{
+  .MuiSvgIcon-root{
+    color: transparent !important;
+  }
+}
+.slick-list{
+  width: 100%;
+}
+.bg{
+  &-violet{
+    background-color: $violet;
+  }
+}

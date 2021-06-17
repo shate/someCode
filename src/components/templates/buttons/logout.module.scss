@@ -1,0 +1,18 @@
+@import "../../../scss/utils/colors";
+@import "../../../scss/utils/mixins";
+
+
+.logOutdBtn{
+  font-family: 'Montserrat-Thin';
+  color: $light-brown;
+  font-size: 20px;
+  &:hover{
+    color: $green;
+    svg{
+      path{
+        fill: $green;
+      }
+    }
+  }
+}
+

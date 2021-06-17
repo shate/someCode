@@ -1,0 +1,41 @@
+@import "../../../scss/utils/mixins";
+
+.item{
+  position: relative;
+  max-width: 300px;
+  @include breakpoint(sm) {
+    height: 400px;
+    max-height: 400px;
+  }
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+  .cover{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    width: 100%;
+    @include breakpoint(sm){
+      height: 100%;
+    }
+
+    object-fit: cover;
+  }
+  h5{
+    font-family: 'Helvetica' !important;
+  }
+}
+.overlay{
+  background: rgba(34, 34, 34, 0.7);
+  backdrop-filter: blur(7px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  border-radius: 18px;
+  padding: 22px 11px;
+
+}
+

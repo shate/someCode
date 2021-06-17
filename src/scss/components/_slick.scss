@@ -1,0 +1,19 @@
+.slick-slider {
+  width: 115%;
+  //max-width: calc(100vh*3/4);
+  display: flex;
+  margin: auto -1.5rem;
+}
+
+.slick-slide {
+  & > div {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 12% 1rem;
+  }
+
+  img {
+    height: 45vh;
+    display: inline-block;
+  }
+}

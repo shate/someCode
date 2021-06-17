@@ -1,0 +1,58 @@
+@import "../../../scss/utils/mixins";
+@import "../../../scss/utils/colors";
+
+.steps{
+  margin: 30px auto 21px;
+  @include breakpoint(sm) {
+    margin: 33px auto 21px;
+  }
+  .step{
+    color: rgba(225, 211, 193, 0.5);
+    line-height: 1.8;
+    font-weight: 200;
+    width: 56px;
+    height: 56px;
+    font-size: 30px;
+    @include breakpoint(sm) {
+      font-size: 40px;
+      width: 72px;
+      height: 72px;
+    }
+    border-radius: 50%;
+    border: 2px solid;
+    &.nextStep{
+      color: $light-blue;
+      border-color: $light-blue;
+    }
+    &.successStep{
+      color: $green;
+      border-color: $green;
+    }
+  }
+  .divider{
+    width: 25px;
+    @include breakpoint(sm) {
+      width: 38px;
+    }
+    border-bottom: 2px dashed rgba(225, 211, 193, 0.5);
+    margin: 0 13px;
+    position: relative;
+    &:before, &:after{
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 2px;
+      background: rgba(34, 34, 34, 0.7);
+      top: 0;
+    }
+    &:before{
+      left: 0;
+    }
+    &:after{
+      right: 0;
+    }
+    &.successStep{
+      border-color: $green;
+    }
+  }
+}

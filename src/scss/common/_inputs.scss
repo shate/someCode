@@ -1,0 +1,24 @@
+.MuiTextField {
+  &-success {
+    .MuiInput-underline {
+      &:before {
+        border-color: $green;
+      }
+    }
+  }
+
+  &-default {
+    .MuiInput-underline {
+      &:before {
+        border-color: $light-brown;
+      }
+    }
+  }
+}
+
+.MuiFormControl-root {
+  .MuiSelect-icon {
+    color: $light-brown;
+  }
+}
+

@@ -1,0 +1,22 @@
+.formContainer{
+  border-radius: 20px;
+  position: relative;
+  max-width: 540px;
+  padding: 35px 0 30px;
+  margin: auto;
+
+  @include breakpoint(sm){
+    padding: 35px 20px 30px;
+    background: rgba(34, 34, 34, 0.7);
+  }
+  &.profile{
+    max-width: 930px;
+    margin: auto;
+  }
+  &.bgTransparent{
+    background-color: transparent;
+  }
+  .mobilBg{
+    background: rgba(34, 34, 34, 0.7);
+  }
+}

@@ -1,0 +1,12 @@
+.Toastify{
+  &__toast{
+    font-family: $font-family-base;
+    color: $light-brown;
+    &--error{
+      background: $red !important;
+    }
+    &--success{
+      background: $green !important;
+    }
+  }
+}

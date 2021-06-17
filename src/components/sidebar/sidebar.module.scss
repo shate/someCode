@@ -1,0 +1,33 @@
+@import "../../scss/utils/colors";
+.root{
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(34, 34, 34, 0.7);
+  position: fixed;
+  a{
+    margin-bottom: 60px;
+  }
+}
+.min{
+  width: 70px;
+  align-items: center;
+}
+.max{
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.btn{
+  position: relative;
+  left: -10px;
+}
+.btnWrap{
+  &:hover{
+    svg{
+      path{
+        fill : $green;
+      }
+    }
+  }
+}

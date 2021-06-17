@@ -1,0 +1,34 @@
+@import "../../scss/utils/colors";
+@import "../../scss/utils/mixins";
+
+.root{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  color: $light-brown;
+
+}
+.dehaze{
+  cursor: pointer;
+  display: inline-block;
+  width: 22px;
+}
+.formContainer{
+  border-radius: 20px;
+  position: relative;
+
+   @include breakpoint(sm){
+     max-width: 540px;
+    padding: 35px 20px 30px;
+    background: rgba(34, 34, 34, 0.7);
+    margin: auto;
+  }
+  &.profile{
+    max-width: 930px;
+    width: 100%;
+    margin: auto;
+  }
+  &.bgTransparent{
+    background-color: transparent;
+  }
+}

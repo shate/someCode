@@ -1,0 +1,63 @@
+@import "../../scss/utils/colors";
+@import "../../scss/utils/mixins";
+
+
+.help{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  right: 10px;
+  @include breakpoint(sm) {
+    right: 0;
+  }
+  bottom: 15px;
+}
+.mobilWrap{
+  background: rgba(34, 34, 34, 0.7);
+  position: relative;
+  @include breakpoint(sm){
+    background: transparent;
+  }
+
+  input, label{
+    padding-left: 11px;
+    @include breakpoint(sm) {
+      padding-left: 0;
+    }
+  }
+
+}
+
+.min, .max{
+  background-color: #0FBDE9;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.min{
+  height: 13px;
+  width: 13px;
+}
+.max{
+  width: 24px;
+  height: 24px;
+}
+.cancelledBtn{
+  position: fixed;
+  left: 15px;
+  bottom: 80px;
+  @include breakpoint(sm) {
+    left: auto;
+    right: 22px;
+    bottom: 22px;
+  }
+  &:hover{
+    color: $green;
+    svg{
+      path{
+        fill: $green;
+      }
+    }
+  }
+}

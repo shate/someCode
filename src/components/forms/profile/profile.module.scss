@@ -1,0 +1,27 @@
+@import "../../../scss/utils/colors";
+@import "../../../scss/utils/mixins";
+
+.userPhoto{
+  background-image: url('../../../assets/img/canseled.svg');
+  -webkit-background-size: cover;
+  background-size: cover;
+  max-width: 130px;
+  padding: 8px;
+  @include breakpoint(sm) {
+    max-width: 146px;
+    padding: 10px;
+  }
+}
+.mobilBorder{
+  border-bottom: 1px solid $light-brown;
+  padding-bottom: 18px;
+  margin-bottom: 20px;
+  @include breakpoint(sm){
+    border-bottom-color: transparent;
+    padding-bottom: 0;
+  }
+}
+.select{
+  padding-left: 10px;
+}
+

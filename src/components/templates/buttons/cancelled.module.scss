@@ -1,0 +1,20 @@
+@import "../../../scss/utils/colors";
+@import "../../../scss/utils/mixins";
+
+
+.cancelledBtn{
+
+  @include breakpoint(sm) {
+    left: auto;
+    right: 22px;
+    bottom: 22px;
+  }
+  &:hover{
+    color: $green;
+    svg{
+      path{
+        fill: $green;
+      }
+    }
+  }
+}
